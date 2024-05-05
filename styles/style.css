@@ -41,4 +41,8 @@ h3 {
     color: #008899;
 }
 
+/* navbar font in Bootstrap */
+.navbar-main-title {
+    font-size: x-large;
+}
 
