@@ -7,7 +7,7 @@
 
 body {
     background-color: #eaf4fc;
-    padding-top: 100px;
+    margin-top: 100px;
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -16,6 +16,11 @@ body {
 h3 {
     margin: 0px;
     padding: 10px;
+}
+
+
+.memo-link {
+    color: #164a84;
 }
 
 .profile-sub-content {
@@ -34,7 +39,6 @@ h3 {
     font-size: x-large;
     vertical-align: middle;
     color: #008899;
-
 }
 
 /* Change placeholder color in Bootstrap */
