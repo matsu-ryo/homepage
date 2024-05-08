@@ -20,11 +20,12 @@ h3 {
 
 
 .memo-link {
-    color: #164a84;
+    color: #19448e;
 }
 
 .pub-link {
-    color: #00a3af;
+    /* color: #00a3af; */
+    color: #19448e;
 }
 
 .profile-sub-content {
