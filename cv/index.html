@@ -1,186 +1,84 @@
-<!DOCTYPE html>
-<html class="ja" lang="ja">
+---
+layout: default
+title: R.Matsushita web page - CV
+section: cv
+root: "../"
+---
+<div class="container-fluid">
+  <h2 class="page-heading">Curriculum Vitae</h2>
+  <p class="lead">これまでの人生</p>
 
-    <!-- head -->
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-site-verification" content="7tHobQYYeZ3Cu6Lq-r90IqLMeGNLDp7tflgAfalFEi8" />
-        
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        
-        <!-- Style sheet -->
-        <link href="../styles/style.css" rel="stylesheet">
+  <section aria-labelledby="education-heading">
+    <h3 id="education-heading" class="list-title">Education</h3>
+    <div class="table-responsive content-table content-table--narrow">
+      <table class="table table-hover align-middle">
+        <thead>
+          <tr>
+            <th class="year-column" scope="col">Year</th>
+            <th scope="col"><span class="visually-hidden">Education</span></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          {% for item in site.data.cv.education %}
+            <tr>
+              <td class="year-column">
+                <time datetime="{{ item.start }}">{{ item.start }}</time> -
+                {% if item.end %}<time datetime="{{ item.end }}">{{ item.end }}</time>{% else %}{{ item.end_label }}{% endif %}
+              </td>
+              <td>{{ item.description }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-        <!-- Google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <section aria-labelledby="job-heading">
+    <h3 id="job-heading" class="list-title">Job</h3>
+    <div class="table-responsive content-table content-table--narrow">
+      <table class="table table-hover align-middle">
+        <thead>
+          <tr>
+            <th class="year-column" scope="col">Year</th>
+            <th scope="col"><span class="visually-hidden">Job</span></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          {% for item in site.data.cv.jobs %}
+            <tr>
+              <td class="year-column">
+                <time datetime="{{ item.start }}">{{ item.start }}</time> -
+                {% if item.end %}<time datetime="{{ item.end }}">{{ item.end }}</time>{% else %}{{ item.end_label }}{% endif %}
+              </td>
+              <td>{{ item.description }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-        <!-- Title -->
-        <title>R.Matsushita web page - CV</title>
-
-        <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #008899;">
-            <div class="container-fluid">
-                <a class="navbar-brand navbar-main-title">Ryota Matsushita</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./index.html" aria-current="page" aria-disabled="true">CV</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../publications/index.html">Publications</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../private/index.html">Private</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Footer -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-bottom" style="background-color: #008899; margin-top: 20px;">
-            <div class="container-fluid">
-                <a class="navbar-brand" style="text-align: right; font-size: small;">&copy; 2024 R.Matsushita</a>
-            </div>
-        </nav>
-        
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8WPP2F674"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-E8WPP2F674');
-    </script>
-
-
-    <!-- body -->
-    <body>
-        <div class="container-fluid">
-            <h2 style="color: #008899;">Curriculum Vitae</h2>
-            <p class="lead">
-                これまでの人生
-            </p>
-            <!-- Educations -->
-            <h3 class="list-title">Education</h3>
-            <table class="table table-hover" style="max-width: 700px; text-align: left;">
-                <thead>
-                    <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td><time datetime="2016">2016</time> - <time datetime="2020">2020</time></td>
-                        <td>信州大学 理学部 理学科 物理学コース</td>
-                    </tr>
-                    <tr>
-                        <td><time datetime="2020">2020</time> - <time datetime="2022">2022</time></td>
-                        <td>東京大学 理学系研究科 物理学専攻 修士課程</td>
-                    </tr>
-                    <tr>
-                        <td><time datetime="2022">2022</time> - Present</td>
-                        <td>東京大学 理学系研究科 物理学専攻 博士課程</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- Jobs -->
-            <h3 class="list-title">Job</h3>
-            <table class="table table-hover" style="max-width: 700px; text-align: left;">
-                <thead>
-                    <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td><time datetime="2020">2020</time> - Present</td>
-                        
-                        <td>Research Assistant (KEK)</td>
-                    </tr>
-                    <tr>
-                        <td><time datetime="2022">2022</time> - <time datetime="2023">2023</time></td>
-                        <td>Research Assistant (Univ. of Tokyo)</td>
-                    </tr>
-                    <tr>
-                        <td><time datetime="2023">2023</time> - <time datetime="2025">2025</time></td>
-                        <td>JSPS特別研究員 (DC2)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- Awards -->
-            <h3 class="list-title">Award</h3>
-            <table class="table table-hover" style="max-width: 700px; text-align: left;">
-                <thead>
-                    <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td><time datetime="2022">2022</time></td>
-                        <td>
-                            <a class="pub-link" href="https://www.jps.or.jp/activities/awards/gakusei/2022_student_presentation_award.php#:~:text=%E6%B0%8F%E5%90%8D-,%E6%9D%BE%E4%B8%8B%E3%80%80%E5%87%8C%E5%A4%A7,-Ryota%20Matsushita" target="_blank">
-                                2022年秋季大会 日本物理学会学生優秀発表賞（素粒子実験領域）
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><time datetime="2024">2024</time></td>
-                        <td>
-                            <a class="pub-link" href="https://www.pasj.jp/award_nenkai.html#:~:text=%E6%9D%BE%E4%B8%8B%20%E5%87%8C%E5%A4%A7,%E8%93%84%E7%A9%8D%E3%81%AE%E5%AE%9F%E8%A8%BC" target="_blank">
-                                第21回 日本加速器学会年会 年会賞（ポスター部門）
-                            </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            
-                        </td>
-                        <td>
-                            <a class="pub-link"
-                                href="https://www.jps.or.jp/activities/awards/gakusei/2024a_student_presentation_award.php#:~:text=%E6%B0%8F%E5%90%8D-,%E6%9D%BE%E4%B8%8B%E3%80%80%E5%87%8C%E5%A4%A7,-Matsushita%20Ryota"
-                                target="_blank">
-                                日本物理学会 第79回年次大会 学生優秀発表賞（素粒子実験領域）
-                            </a>
-                        </td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-
-
-
-
-        <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-        </script>
-    </body>
-
-
-</html>
+  <section aria-labelledby="award-heading">
+    <h3 id="award-heading" class="list-title">Award</h3>
+    <div class="table-responsive content-table content-table--narrow">
+      <table class="table table-hover align-middle">
+        <thead>
+          <tr>
+            <th class="year-column" scope="col">Year</th>
+            <th scope="col"><span class="visually-hidden">Award</span></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          {% for item in site.data.cv.awards %}
+            <tr>
+              <td class="year-column">{% if item.year != "" %}<time datetime="{{ item.year }}">{{ item.year }}</time>{% endif %}</td>
+              <td>
+                <a class="pub-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
