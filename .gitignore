@@ -1,3 +1,8 @@
 
 # for VScode
 .DS_Store
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.sass-cache/
