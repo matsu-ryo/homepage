@@ -1,0 +1,8 @@
+title: Ryota Matsushita
+timezone: Asia/Tokyo
+google_site_verification: 7tHobQYYeZ3Cu6Lq-r90IqLMeGNLDp7tflgAfalFEi8
+google_analytics: G-E8WPP2F674
+strict_front_matter: true
+
+exclude:
+  - README.md
