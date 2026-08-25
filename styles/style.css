@@ -1,231 +1,59 @@
-:root {
-    --color-background: #eaf4fc;
-    --color-primary: #008899;
-    --color-secondary: #164a84;
-    --color-accent: #e95295;
-    --color-heading: #b11c5f;
-    --color-link: #19448e;
-}
-
-html {
-    min-width: 320px;
+/* Google font */
+.noto-serif-jp-regular {
+    font-family: "Noto Serif JP", "serif";
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-    background-color: var(--color-background);
+    background-color: #eaf4fc;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.site-navbar,
-.site-footer {
-    background-color: var(--color-primary);
+h3 {
+    margin: 0px;
+    padding: 10px;
 }
 
-.site-main {
-    width: 100%;
-    flex: 1;
-    padding: 6.5rem clamp(1rem, 4vw, 3.125rem) 3rem;
+
+.memo-link {
+    color: #19448e;
 }
 
-.site-footer {
-    padding: 0.75rem clamp(1rem, 4vw, 3.125rem);
-    color: #fff;
-    text-align: right;
+.pub-link {
+    /* color: #00a3af; */
+    color: #19448e;
 }
 
-.navbar-main-title {
-    font-size: x-large;
+.profile-sub-content {
+    padding: 0%;
+    margin: 0%;
+
+    font-size: large;
+    
+    vertical-align: middle;
+    /* border: black solid; */
+
 }
 
-.page-heading {
-    color: var(--color-primary);
-}
 
 .list-title {
-    margin: 0;
-    padding: 0.625rem;
-    color: var(--color-heading);
     font-size: x-large;
+    vertical-align: middle;
+    /* color: #008899; */
+    color: #b11c5f;
 }
 
-.memo-link,
-.pub-link {
-    color: var(--color-link);
-    overflow-wrap: anywhere;
+/* Change placeholder color in Bootstrap */
+.form-control::placeholder {
+    color: #008899;
 }
 
-.home-links {
-    margin-bottom: 3rem;
-    padding: 0 1rem 1rem 0;
-}
-
-.home-link-card {
-    height: 100%;
-    background-color: var(--color-primary);
-    box-shadow:
-        0.5rem 0.5rem 0 var(--color-accent),
-        1rem 1rem 0 var(--color-secondary);
-    color: #fff;
-}
-
-.home-link-card h3 {
-    margin: 0;
-    padding: 0.625rem;
-}
-
-.news-section {
-    margin-inline: auto;
-    max-width: 62rem;
-}
-
-.news-table-container {
-    max-height: 21.875rem;
-    overflow: auto;
-}
-
-.news-date,
-.year-column {
-    width: 9rem;
-    white-space: nowrap;
-}
-
-.profile-column {
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-}
-
-.profile-card {
-    height: 100%;
-    padding: 1.25rem;
-    background-color: var(--color-primary);
-    box-shadow:
-        0.5rem 0.5rem 0 var(--color-accent),
-        1rem 1rem 0 var(--color-secondary);
-    color: #fff;
-}
-
-.profile-image {
-    display: block;
-    width: min(100%, 20.625rem);
-    height: auto;
-    margin: 0 auto 1rem;
-    border: 3px solid #fff;
-}
-
-.profile-name {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.profile-details {
-    margin: 0;
-}
-
-.profile-detail-row {
-    display: grid;
-    grid-template-columns: minmax(5rem, 1fr) minmax(0, 1fr);
-    gap: 1rem;
-    align-items: center;
-    padding: 0.625rem 0;
-}
-
-.profile-detail-row dt,
-.profile-detail-row dd {
-    margin: 0;
-    text-align: center;
-}
-
-.content-table {
-    max-width: 100rem;
-}
-
-.content-table--narrow {
-    max-width: 43.75rem;
-}
-
-.content-table td:last-child {
-    min-width: 14rem;
-    overflow-wrap: anywhere;
-}
-
-.private-links,
-.content-list {
-    padding-left: 1.5rem;
-}
-
-.private-links li,
-.content-list li {
-    margin-bottom: 1rem;
-}
-
-.private-links a {
-    color: var(--color-primary);
-}
-
-.travel-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
-    gap: 1.5rem;
-    align-items: start;
-}
-
-.travel-figure {
-    margin: 0;
-}
-
-.travel-figure img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 0.5rem;
-}
-
-.travel-figure--wide {
-    grid-column: span 2;
-}
-
-.figure-caption {
-    text-align: right;
-}
-
-@media (max-width: 767.98px) {
-    .site-main {
-        padding-top: 5.5rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
-    .site-footer {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
-    .home-links {
-        margin-bottom: 2rem;
-    }
-
-    .news-date,
-    .year-column {
-        width: 7.5rem;
-    }
-
-    .profile-column {
-        padding-right: calc(var(--bs-gutter-x) * 0.5);
-        padding-bottom: 1rem;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .profile-detail-row {
-        grid-template-columns: 1fr;
-        gap: 0.25rem;
-    }
-
-    .travel-figure--wide {
-        grid-column: span 1;
-    }
+/* navbar font in Bootstrap */
+.navbar-main-title {
+    font-size: x-large;
 }
 
