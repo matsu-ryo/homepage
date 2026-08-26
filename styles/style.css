@@ -47,13 +47,7 @@ h3 {
     color: #b11c5f;
 }
 
-/* Change placeholder color in Bootstrap */
-.form-control::placeholder {
-    color: #008899;
-}
-
 /* navbar font in Bootstrap */
 .navbar-main-title {
     font-size: x-large;
 }
-

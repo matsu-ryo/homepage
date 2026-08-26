@@ -1,0 +1,21 @@
+<table class="table table-hover" style="max-width: 1600px; text-align: left;">
+    <thead>
+        <tr>
+            <th scope="col">Year (JFY)</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        {% for item in include.items %}
+        <tr>
+            <td>{{ item.year }}</td>
+            <td>
+                {{ item.citation }}
+                {% if item.event %}<a class="pub-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.event }}</a>, {{ item.location }},
+                <time datetime="{{ item.date }}">{{ item.date_display }}</time>{% else %}{{ item.link_prefix }}<a class="pub-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label }}</a>{% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
