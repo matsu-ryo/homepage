@@ -1,0 +1,33 @@
+education:
+  - start: "2016"
+    end: "2020"
+    description: 信州大学 理学部 理学科 物理学コース
+  - start: "2020"
+    end: "2022"
+    description: 東京大学 理学系研究科 物理学専攻 修士課程
+  - start: "2022"
+    end_label: Present
+    description: 東京大学 理学系研究科 物理学専攻 博士課程
+
+jobs:
+  - start: "2020"
+    end_label: Present
+    description: Research Assistant (KEK)
+  - start: "2022"
+    end: "2023"
+    description: Research Assistant (Univ. of Tokyo)
+  - start: "2023"
+    end: "2025"
+    description: JSPS特別研究員 (DC2)
+
+awards:
+  - year: "2022"
+    title: 2022年秋季大会 日本物理学会学生優秀発表賞（素粒子実験領域）
+    url: "https://www.jps.or.jp/activities/awards/gakusei/2022_student_presentation_award.php#:~:text=%E6%B0%8F%E5%90%8D-,%E6%9D%BE%E4%B8%8B%E3%80%80%E5%87%8C%E5%A4%A7,-Ryota%20Matsushita"
+  - year: "2024"
+    title: 第21回 日本加速器学会年会 年会賞（ポスター部門）
+    url: "https://www.pasj.jp/award_nenkai.html#:~:text=%E6%9D%BE%E4%B8%8B%20%E5%87%8C%E5%A4%A7,%E8%93%84%E7%A9%8D%E3%81%AE%E5%AE%9F%E8%A8%BC"
+  - year: ""
+    title: 日本物理学会 第79回年次大会 学生優秀発表賞（素粒子実験領域）
+    url: "https://www.jps.or.jp/activities/awards/gakusei/2024a_student_presentation_award.php#:~:text=%E6%B0%8F%E5%90%8D-,%E6%9D%BE%E4%B8%8B%E3%80%80%E5%87%8C%E5%A4%A7,-Matsushita%20Ryota"
+

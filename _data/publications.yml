@@ -1,0 +1,114 @@
+papers:
+  - year: "2025"
+    citation: >-
+      First Experimental Demonstration of Beam Storage by Three-Dimensional Spiral Injection Scheme for Ultra-Compact Storage Rings, 2026,
+    link_prefix: arxiv
+    link_label: "2602.01504"
+    url: "https://arxiv.org/abs/2602.01504"
+  - year: "2023"
+    citation: >-
+      R.Matsushita et al, "Demonstration of Three-dimensional Spiral Injection for the J-PARC Muon g-2/EDM Experiment", J. Phys.: Conf. Ser., 2024,
+    link_prefix: "doi:"
+    link_label: "10.1088/1742-6596/2687/2/022035"
+    url: "https://doi.org/10.1088/1742-6596/2687/2/022035"
+
+oral:
+  - year: "2024"
+    citation: >-
+      松下凌大 他,「J-PARC Muon g-2/EDM実験に向けた3次元らせん入射実証実験：蓄積ビーム状態の評価」, 16aWA202-8,
+    event: 日本物理学会 第79回年次大会
+    url: "https://onsite.gakkai-web.net/jps/jps_search/2024au/index.html"
+    location: 北海道大学
+    date: "2024-09-16"
+    date_display: "2024/09/16"
+  - year: "2023"
+    citation: >-
+      松下凌大,「g-2 入射」,
+    event: 中間子科学会研究会
+    url: "https://kds.kek.jp/event/47493/"
+    location: KEK 東海1号館
+    date: "2023-07-28"
+    date_display: "2023/07/28"
+  - year: "2022"
+    citation: >-
+      松下凌大 他,「J-PARC Muon g-2/EDM実験に向けた3次元らせん入射実証実験：蓄積ビームの運動状態とビーム調整」, 25aT3-3,
+    event: 日本物理学会 2023年春季大会
+    url: "https://onsite.gakkai-web.net/jps/jps_search/2022au/index.html"
+    location: オンライン
+    date: "2023-03-25"
+    date_display: "2023/03/25"
+  - year: ""
+    citation: >-
+      R.Matsushita et. al, "Demonstration of Three-dimentional Spiral Injection for the J-PARC Muon g-2/EDM Experiment", O-B11,
+    event: ISQBS2022
+    url: "https://sites.google.com/view/isqbs2022/"
+    location: Online
+    date: "2022-12-03"
+    date_display: "2022/12/03"
+  - year: ""
+    citation: >-
+      松下凌大 他,「J-PARC muon g-2/EDM実験のための3次元らせん入射実証実験」, 6aA421-10,
+    event: 日本物理学会 2022年秋季大会
+    url: "https://onsite.gakkai-web.net/jps/jps_search/2022au/index.html"
+    location: 岡山理科大学
+    date: "2022-09-06"
+    date_display: "2022/09/06"
+  - year: "2021"
+    citation: >-
+      松下凌大 他, 「J-PARC muon g-2/EDM実験における3次元らせん入射手法実証実験：キッカー装置を用いたビーム蓄積実証実験」, 15aA124-12,
+    event: 日本物理学会 第77回年次大会
+    url: "https://onsite.gakkai-web.net/jps/jps_search/2022sp/index.html"
+    location: オンライン
+    date: "2022-03-15"
+    date_display: "2022/03/15"
+  - year: ""
+    citation: >-
+      松下凌大 他, 「J-PARC muon g-2/EDM実験における3次元らせん入射手法実証実験：蓄積磁石内でのパルスビーム検出方法の研究開発」, 16aT4-2,
+    event: 日本物理学会 2021年秋季大会
+    url: "https://w4.gakkai-web.net/jps_search/2021au/index.html"
+    location: オンライン
+    date: "2021-09-16"
+    date_display: "2021/09/16"
+  - year: "2020"
+    citation: >-
+      松下凌大 他, 「J-PARC g<sub>μ</sub> -2/μEDM実験のためのビーム入射手法実証実験：パルスビームの生成・検出方法の研究開発」, 12pX1-4,
+    event: 日本物理学会 第76回年次大会
+    url: "https://w4.gakkai-web.net/jps_search/2021sp/index.html"
+    location: オンライン
+    date: "2021-03-12"
+    date_display: "2021/03/12"
+
+poster:
+  - year: "2024"
+    citation: >-
+      松下凌大 他, 「3次元らせん入射手法によるビーム蓄積の実証」, THP015,
+    event: 第21回 日本加速器学会年会
+    url: "https://www.pasj.jp/dai21kainenkai/index.html"
+    location: 山形テルサ, 山形
+    date: "2024-08-01"
+    date_display: "2024/08/01"
+  - year: "2023"
+    citation: >-
+      R.Matsushita et. al, "Demonstration of Three-dimensional Spiral Injection for the J-PARC Muon g-2/EDM Experiment", MOPA118,
+    event: IPAC23
+    url: "https://www.ipac23.org/"
+    location: Venice, Italy
+    date: "2023-05-08"
+    date_display: "2023/05/08"
+  - year: "2021"
+    citation: >-
+      R.Matsushita et. al, "Pulsed beam generation for the three-dimensional spiral injection scheme test",
+    event: WAO2021
+    url: "https://www.wao2021.com/"
+    location: Spain(Online)
+    date: "2021-10-05"
+    date_display: "2021/10/05"
+  - year: ""
+    citation: >-
+      R.Matsushita et. al, "Development of Pulsed Beam System for The Three Dimensional Spiral Injection Scheme in The J-PARC Muon g-2/EDM Experiment", MOPAB256,
+    event: IPAC21
+    url: "https://www.ipac21.org/"
+    location: Brasil(Online)
+    date: "2021-05-24"
+    date_display: "2021/05/24"
+
